@@ -42,7 +42,7 @@ $(document).ready(function () {
   });
 
   var typed = new Typed(".typing-2", {
-    strings: ["Designer"],
+    strings: ["Designer","Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -72,43 +72,44 @@ $(document).ready(function () {
   });
 });
 
-function sendmail() {
-  var name = $("#Name").val();
-  var email = $("#Email").val();
-  var subject = $("#Subject").val();
-  var message = $("#Message").val();
 
-  var Body =
-    "Name: " +
-    name +
-    "<br>Email: " +
-    email +
-    "<br>Subject: " +
-    subject +
-    "<br>Message: " +
-    message;
 
-  Email.send({
-    SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
-    To: "mishrayash0607@gmail.com",
-    From: "message@gmail.com",
-    Subject: "New message on contact from " + name,
-    Body: Body,
-  }).then((message) => {
-    if (message == "OK") {
-      alert("Your mail has been send. Thank you for connecting.");
-    } else {
-      alert("There is error at sending message. ");
-    }
-  });
+//External Link
+ function cp()
+ {
+window.open("https://www.codechef.com/users/naruto_nova");
+ }
+  
+ function port(){
+   window.open("https://affidavit-portfolio.netlify.app/");
+ }
+  
 
-  window.open("thankyou.html");
-  
-  setTimeout(function(){
-    window.location.reload();
-  },100)
-  
-  window.prevent.default();
- 
-  
-}
+ function  kiit()
+ {
+   window.open("https://kiit.ac.in")
+ }
+
+ function gmail()
+ {
+   window.open("mailto:mishrayash0607@gmail.com");
+ }
+
+ function insta()
+ {
+   window.open("https://www.instagram.com/yash____152000/")
+ }
+
+ function linkedin()
+ {
+   window.open("https://www.linkedin.com/in/yash-mishra-1847aa1aa/");
+ }
+
+ function fb(){
+window.open("https://www.facebook.com/profile.php?id=100038585474727");
+ }
+
+ function hack()
+ {
+   window.open("https://www.hackerrank.com/mishrayash0607");
+ }
