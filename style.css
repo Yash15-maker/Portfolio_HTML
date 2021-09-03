@@ -82,6 +82,7 @@ section .title::after {
   transform: translateX(-50%);
 }
 
+
 /* navbar styling */
 .navbar {
   position: fixed;
@@ -105,10 +106,10 @@ section .title::after {
   font-size: 35px;
   font-weight: 600;
 }
-.navbar .logo a span {
-  color: crimson;
-  transition: all 0.3s ease;
-}
+/* /.navbar .logo a span {
+   color: crimson;
+  /*transition: all 0.3s ease; */
+ */
 .navbar.sticky .logo a span {
   color: #fff;
 }
@@ -176,6 +177,7 @@ section .title::after {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
+  
 }
 .home .max-width {
   width: 100%;
@@ -305,7 +307,7 @@ section .title::after {
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
-  margin: 10px 0 7px 0;
+  margin: 20px 0 7px 0;
 }
 
 /* skills section styling */
@@ -376,11 +378,11 @@ section .title::after {
 .skills-content .right .js::before {
   width: 80%;
 }
-.skills-content .right .php::before {
+.skills-content .right .react::before {
   width: 50%;
 }
-.skills-content .right .mysql::before {
-  width: 70%;
+.skills-content .right .firebase::before {
+  width: 30%;
 }
 
 /* teams section styling */
@@ -394,6 +396,7 @@ section .title::after {
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .teams .carousel .card:hover {
   background: crimson;
@@ -407,6 +410,7 @@ section .title::after {
 }
 .teams .carousel .card:hover .box {
   transform: scale(1.05);
+  cursor: pointer;
 }
 .teams .carousel .card .text {
   font-size: 25px;
@@ -687,7 +691,26 @@ footer span a:hover {
 }
 
 
-.thanku{
-  text-align: center;
-  margin: 400px;
+
+
+.hackerrank{
+  text-decoration-line: underline;
+}
+
+.hackerrank:hover {
+text-decoration-color: lightblue;
+
+}
+
+.codechef:hover{
+  text-decoration-color: aquamarine;
+}
+
+.kiit{
+  text-decoration-line: underline;
+}
+
+.kkit:gover{
+  
+  text-decoration-color: aquamarine;
 }
