@@ -6,11 +6,11 @@
     <title>Yash Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/logo.png" />
-     <meta name="description"content="Portfolio-Yash Mishra" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <meta name="description"content="Portfolio-Yash Mishra" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -32,11 +32,11 @@
 
 <body>
     
-    <div class="scroll-up-btn">
+    <div class="scroll-up-btn" data-aos="flip-left">
         <em  class="fa fa-mouse" aria-hidden="true"></em>
-    </div>
+    </div >
     
-    <nav class="navbar">
+    <nav class="navbar" data-aos="fade-up-right">
         <div class="max-width">
             <div class="logo"><img alt="hand" src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="50" /></div>
             <ul class="menu">
@@ -55,7 +55,7 @@
 
     <!-- home section start -->
     <section class="home" id="home" >
-        <div class="max-width">
+        <div class="max-width" data-aos="flip-up">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Yash Mishra</div>
@@ -67,7 +67,7 @@
 
     <!-- about section start -->
     <section class="about" id="about" >
-        <div class="max-width">
+        <div class="max-width" data-aos="zoom-in">
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
@@ -84,7 +84,7 @@
 
     <!-- services section start -->
     <section class="services" id="services" >
-        <div class="max-width">
+        <div class="max-width" data-aos="fade-up-right">
             <h2 class="title">My services</h2>
             <div class="serv-content" >
              <div  style="cursor: pointer" class="card">
@@ -101,7 +101,7 @@
                     <div class="box">
                         <em class="fas fa-chart-line"></em>
                         <div class="text">Academics</div>
-                        <p>I m in my 3rd year of Graduation.I m currently pursuing B.Tech in CSE from <span class="kiit" style="cursor:crosshair"onClick="kiit()">KIIT</span>.I'm aiming to be a good Software Developer in my life. </p>
+                        <p>I m in my 3rd year of Graduation.I m currently pursuing B.Tech in CSE from <span class="kiit" style="cursor:crosshair" onClick="kiit()">KIIT</span>.I'm aiming to be a good Software Developer in my life. </p>
                     </div>
                 </div>
                 <div style="cursor: pointer" class="card" >
@@ -121,8 +121,8 @@
     </section>
 
     <!-- skills section start -->
-    <section class="skills" id="skills" class="container interests aos-init aos-animate">
-        <div class="max-width">
+    <section class="skills" id="skills"   >
+        <div class="max-width" data-aos="flip-right">
             <h2 class="title">My skills</h2>
             <div class="skills-content">
                 <div class="column left">
@@ -181,7 +181,7 @@
    
     <!-- teams section start -->
     <section class="teams" id="teams" class="container interests aos-init aos-animate">
-        <div class="max-width">
+        <div class="max-width" data-aos="fade-up-right">
             <h2 class="title">My </h2>
             <div class="carousel owl-carousel">
                             <div class="card">
@@ -218,12 +218,16 @@
     </section>
 
     <!-- contact section start -->
-    <section class="contact" id="contact" class="container interests aos-init aos-animate">
-        <div class="max-width">
+    <section class="contact" id="contact">
+        <div class="max-width" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Address details</div>
+
+                
   
                     <div class="icons">
                         <div class="row">
@@ -237,7 +241,7 @@
                             <em class="fas fa-map-marker-alt"></em>
                             <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title">Gonda, Uttar pradesh,India</div>
+                                <div class="sub-title">1364-Gyatripooram Near PCF Godawn,Gonda, Uttar pradesh,India</div>
                             </div>
                         </div>
                         <div class="row">
@@ -249,24 +253,25 @@
                         </div>
                     </div>
                 </div>
-                <div id="ini"class="column right">
-                    <div class="text">Message me</div>
+                <div id="ini" class="column right" >
+                   <div class="text">Message Me</div>
                     <div >
                         <div class="fields">
-                            <div class="field name">
+                            <div class="field-email">
                                 <img alt="gmail-png" onclick="gmail()" style="cursor: pointer" src="https://img.icons8.com/fluency/48/000000/mail.png"/>
                              </div>
                            
-                        </div>
-                        <div class="field">
+                        
+                        <div class="field-insta">
                             <img onclick="insta()" alt="insta-png" style="cursor: pointer" src="https://img.icons8.com/color/48/000000/instagram-new--v2.png"/> </div>
-                        <div class="field textarea">
+                        <div class="field-linkedin">
                             <img onclick="linkedin()" alt="linkedin-png" style="cursor: pointer" src="https://img.icons8.com/color/48/000000/linkedin-2--v2.png"/>
                                             </div>
                         <div class="">
-                           
- <img onclick="fb()" alt="fb-png" style="cursor: pointer;" src="https://img.icons8.com/color-glass/48/000000/facebook.png"/>
-                               </div>
+                            <img onclick="fb()" alt="fb-png" style="cursor: pointer;" src="https://img.icons8.com/color-glass/48/000000/facebook.png"/>
+       
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -277,7 +282,8 @@
    
 
     <!-- footer section start -->
-    <footer>
+    <footer data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
        
         <span>Created By <a href="#">Yash Mishra</a>
     
@@ -286,6 +292,14 @@
 
     <script src="script.js">
 
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 1000,
+  easing: 'ease', 
+  
+      });
     </script>
 
 </body>
