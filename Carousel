@@ -1,0 +1,36 @@
+ <section class="teams" id="teams" class="container interests aos-init aos-animate">
+        <div class="max-width" data-aos="fade-up-right">
+            <h2 class="title">My </h2>
+            <div class="carousel owl-carousel">
+                            <div class="card">
+                                <a href="https://www.instagram.com/yash____152000/" style="text-decoration: none;">   
+                    <div class="box">
+                        <img src="images/profile-1.jpeg" alt="">
+                        <div class="text">Yash Mishra</div>
+                        <p> 3rd year BTech CSE student, pursuing at KIIT University, Bhubaneswar, Odisha, India.</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.instagram.com/chatterjee_abhiraj/">
+                    <div class="box">
+                        <img src="images/profile-2.jpeg" alt="">
+                        <div class="text">Abhiraj Chatterjee</div>
+                        <p> 3rd year BTech CSE student, pursuing at KIIT University, Bhubaneswar, Odisha, India.</p>
+                    </div>
+                </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/sayan-bhattacharyya-aa44a61a4/" >
+                    <div class="box">
+                        <img src="images/profile-3.jpeg" alt="">
+                        <div class="text">Sayan Bhattcharya</div>
+                        <p> 3rd year BTech CSE student, pursuing at KIIT University, Bhubaneswar, Odisha, India.</p>
+                    </div>
+                </a>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
