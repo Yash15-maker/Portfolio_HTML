@@ -113,3 +113,8 @@ window.open("https://www.facebook.com/profile.php?id=100038585474727");
  {
    window.open("https://www.hackerrank.com/mishrayash0607");
  }
+
+function tweet()
+{
+  window.open("https://twitter.com/YASHMIS94967162")
+}
