@@ -42,7 +42,7 @@ $(document).ready(function () {
   });
 
   var typed = new Typed(".typing-2", {
-    strings: ["Designer","Developer"],
+    strings: ["Designer", "Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -72,49 +72,61 @@ $(document).ready(function () {
   });
 });
 
-
-
 //External Link
- function cp()
- {
-window.open("https://www.codechef.com/users/naruto_nova");
- }
+function cp() {
+  window.open("https://www.codechef.com/users/naruto_nova");
+}
+
+function port() {
+  window.open("https://affidavit-portfolio.netlify.app/");
+}
+
+function kiit() {
+  window.open("https://kiit.ac.in");
+}
+
+function gmail() {
+  window.open("mailto:mishrayash0607@gmail.com");
+}
+
+function insta() {
+  window.open("https://www.instagram.com/yash____152000/");
+}
+
+function linkedin() {
+  window.open("https://www.linkedin.com/in/yash-mishra-1847aa1aa/");
+}
+
+function fb() {
+  window.open("https://www.facebook.com/profile.php?id=100038585474727");
+}
+
+function hack() {
+  window.open("https://www.hackerrank.com/mishrayash0607");
+}
+
+
+function message() {
+  window.open("https://message-contact.netlify.app/");
+}
+
+
+//Rest -API
+
   
- function port(){
-   window.open("https://affidavit-portfolio.netlify.app/");
- }
-  
 
- function  kiit()
- {
-   window.open("https://kiit.ac.in")
- }
-
- function gmail()
- {
-   window.open("mailto:mishrayash0607@gmail.com");
- }
-
- function insta()
- {
-   window.open("https://www.instagram.com/yash____152000/")
- }
-
- function linkedin()
- {
-   window.open("https://www.linkedin.com/in/yash-mishra-1847aa1aa/");
- }
-
- function fb(){
-window.open("https://www.facebook.com/profile.php?id=100038585474727");
- }
-
- function hack()
- {
-   window.open("https://www.hackerrank.com/mishrayash0607");
- }
-
-function tweet()
+function init()
 {
-  window.open("https://twitter.com/YASHMIS94967162")
+    var url="https://api.github.com/users/Yash15-maker/repos";
+    $.get(url,function(data){
+        console.log(data);
+
+        data=`
+        <td>${data.name}</td>
+        
+        `
+        $("#data").html(data);
+    })
+
+  
 }
