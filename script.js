@@ -110,6 +110,11 @@ function message() {
   window.open("https://message-contact.netlify.app/");
 }
 
+function tweet()
+{
+  window.open("https://twitter.com/YASHMIS94967162");
+}
+
 
 //Rest -API
 
