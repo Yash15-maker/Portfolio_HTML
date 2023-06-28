@@ -105,33 +105,63 @@ function hack() {
   window.open("https://www.hackerrank.com/mishrayash0607");
 }
 
-
 function message() {
   window.open("https://message-contact.netlify.app/");
 }
 
-function tweet()
-{
+function tweet() {
   window.open("https://twitter.com/YASHMIS94967162");
 }
 
-
 //Rest -API
 
-  
+function init() {
+  var url = "https://api.github.com/users/Yash15-maker/repos";
+  $.get(url, function (data) {
+    console.log(data);
 
-function init()
-{
-    var url="https://api.github.com/users/Yash15-maker/repos";
-    $.get(url,function(data){
-        console.log(data);
-
-        data=`
+    data = `
         <td>${data.name}</td>
         
-        `
-        $("#data").html(data);
-    })
+        `;
+    $("#data").html(data);
+  });
+}
 
-  
+function githublink() {
+  window.open("https://github.com/Yash15-maker?tab=repositories");
+}
+
+function githubLink_repo1() {
+  window.open("https://github.com/Yash15-maker/BlogApp");
+}
+
+function liveLink() {
+  window.open("https://blog-naruto-singh.netlify.app/");
+}
+
+function livelink_2() {
+  window.open("https://smartclass.netlify.app/");
+}
+
+function githublink3() {
+  window.open("https://github.com/Code-Mergers/SmartClass/tree/ym-main-2");
+}
+
+function nodegithub() {
+  window.open("https://github.com/Yash15-maker/nodeapi");
+}
+
+function nodelive() {
+  window.open("https://nodeapi-production-4e2d.up.railway.app/");
+}
+
+function githubmalware() {
+  window.open(
+    "https://github.com/Major-Project-4th-year/Malware-Detection-System"
+  );
+}
+
+function malwarelive() {
+  window.open("https://yar-batch23.netlify.app/");
 }

@@ -734,3 +734,64 @@ text-decoration-color: lightblue;
   transform: scale(0.88);
 }
 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 6px 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.car{
+  width: 300px;
+ position: relative;
+ top: 18rem
+}
+
+#cardbutton{
+  height: 70px;
+  width: 10rem;
+}
