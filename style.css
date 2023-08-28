@@ -82,7 +82,6 @@ section .title::after {
   transform: translateX(-50%);
 }
 
-
 /* navbar styling */
 .navbar {
   position: fixed;
@@ -109,8 +108,7 @@ section .title::after {
 /* /.navbar .logo a span {
    color: crimson;
   /*transition: all 0.3s ease; */
- */
-.navbar.sticky .logo a span {
+*/ .navbar.sticky .logo a span {
   color: #fff;
 }
 .navbar .menu li {
@@ -177,7 +175,6 @@ section .title::after {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
-  
 }
 .home .max-width {
   width: 100%;
@@ -550,8 +547,10 @@ footer {
   background: #111;
   padding: 15px 23px;
   color: #fff;
-  
-text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
 }
 footer span a {
   color: crimson;
@@ -560,8 +559,6 @@ footer span a {
 footer span a:hover {
   text-decoration: underline;
 }
-
- 
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -690,31 +687,25 @@ footer span a:hover {
   }
 }
 
-
-
-
-.hackerrank{
+.hackerrank {
   text-decoration-line: underline;
 }
 
 .hackerrank:hover {
-text-decoration-color: lightblue;
-
+  text-decoration-color: lightblue;
 }
 
-.codechef:hover{
+.codechef:hover {
   text-decoration-color: aquamarine;
 }
 
-.kiit{
+.kiit {
   text-decoration-line: underline;
 }
 
-.kiit:hover{
-  
+.kiit:hover {
   text-decoration-color: aquamarine;
 }
-
 
 .button {
   background-color: darkorchid;
@@ -733,7 +724,6 @@ text-decoration-color: lightblue;
 .button:hover {
   transform: scale(0.88);
 }
-
 
 .grid-container {
   display: grid;
@@ -767,14 +757,14 @@ text-decoration-color: lightblue;
 }
 
 .card-footer {
-  padding: 10px;
+  width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .btn {
   padding: 6px 18px;
-  background-color: #4CAF50;
+  background-color: grey;
   color: white;
   border: none;
   border-radius: 5px;
@@ -782,16 +772,99 @@ text-decoration-color: lightblue;
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: hsl(197, 40%, 45%);
 }
 
-.car{
+.car {
   width: 300px;
- position: relative;
- top: 18rem
+  position: relative;
+  top: 18rem;
 }
 
-#cardbutton{
+#cardbutton {
   height: 70px;
   width: 10rem;
+}
+
+/* Projects */
+.card-section {
+  padding-top: 70px;
+  /* height: 100vh; */
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+#cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cards-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects-text {
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
+#images {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+#text-readmore:hover {
+  cursor: pointer;
+}
+.github-photo {
+  height: 10%;
+  width: 10%;
+}
+
+@media (max-width: 800px) {
+  #cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #images {
+    width: 100%;
+    padding: auto;
+  }
+  .card-flex {
+    padding: 0px;
+  }
+  .projects-text {
+    text-align: center;
+  }
+  .card-footer {
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .cards-content-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #text-readmore {
+    font-size: 10px;
+    width: 450px;
+    height: 25%;
+  }
+  .github-photo {
+    height: 30%;
+    width: 30%;
+  }
 }
