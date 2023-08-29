@@ -560,6 +560,12 @@ footer span a:hover {
   text-decoration: underline;
 }
 
+.github-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
   .about .about-content .left img {
@@ -634,7 +640,7 @@ footer span a:hover {
   .skills .skills-content .column,
   .contact .contact-content .column {
     width: 100%;
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
   }
 }
 
@@ -833,6 +839,11 @@ footer span a:hover {
 }
 
 @media (max-width: 800px) {
+  .github-text {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
   #cards {
     width: 100%;
     display: flex;
