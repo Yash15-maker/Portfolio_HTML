@@ -273,7 +273,7 @@ section .title::after {
 .services .title::after,
 .teams .title::after {
   background: #111;
-  content: "what i provide";
+  content: "Simple and Basic";
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
