@@ -50,7 +50,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 section .title {
   position: relative;
@@ -547,7 +547,7 @@ footer {
   background: #111;
   padding: 15px 23px;
   color: #fff;
-  position: fixed;
+  position: relative;
   width: 100%;
   bottom: 0px;
   text-align: center;
@@ -834,8 +834,12 @@ footer span a:hover {
   cursor: pointer;
 }
 .github-photo {
-  height: 10%;
-  width: 10%;
+  height: 5%;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 800px) {

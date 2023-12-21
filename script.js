@@ -128,10 +128,6 @@ function init() {
   });
 }
 
-function githublink() {
-  window.open("https://github.com/Yash15-maker?tab=repositories");
-}
-
 function githubLink_repo1() {
   window.open("https://github.com/Yash15-maker/BlogApp");
 }
