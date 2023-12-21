@@ -834,7 +834,6 @@ footer span a:hover {
   cursor: pointer;
 }
 .github-photo {
-  height: 5%;
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -880,6 +879,6 @@ footer span a:hover {
   }
   .github-photo {
     height: 30%;
-    width: 30%;
+    width: 100;
   }
 }
